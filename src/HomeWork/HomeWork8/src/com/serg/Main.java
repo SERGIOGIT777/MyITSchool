@@ -11,11 +11,12 @@ public class Main {
         System.out.print("Введите цифрой день недели - ");
         Scanner sc = new Scanner(System.in);
         int a = sc.nextInt();
-        String[] mass = {"Понедельник", "Вторник", "Среда", "Четверг", "Пятница", "Суббота", "Воскресенье"};
         if (a>0 && a<=7) {
-        for (int i = 0; i < mass.length; i++) {
+            String[] mass = {"Понедельник", "Вторник", "Среда", "Четверг", "Пятница", "Суббота", "Воскресенье"};
+            for (int i = 0; i < mass.length; i++) {
             if (a == i+1) {
-            return mass[i];}
+                final String mass1 = mass[i];
+                return mass1;}
         }
         } else {
             System.out.print("Нет такого дня недели!!!\n");
