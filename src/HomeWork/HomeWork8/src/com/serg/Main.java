@@ -15,8 +15,7 @@ public class Main {
             String[] mass = {"Понедельник", "Вторник", "Среда", "Четверг", "Пятница", "Суббота", "Воскресенье"};
             for (int i = 0; i < mass.length; i++) {
             if (a == i+1) {
-                final String mass1 = mass[i];
-                return mass1;}
+                return mass[i];}
         }
         } else {
             System.out.print("Нет такого дня недели!!!\n");
